@@ -41,10 +41,10 @@ public class BicicletaController {
 			//enviamos el obeto a persistir en base datos
 			bicicletaService.guardarBicicleta(bicicleta);
 			//obtener una lista de bicicletas
-			List<Bicicleta> listaAutos = bicicletaService.findAll();
+			List<Bicicleta> listaBicicleta = bicicletaService.findAll();
 			//pasamos la lista de bicicletas al jsp
-			model.addAttribute("autosCapturados", listaAutos);
-			return "mostrarAutos.jsp";
+			model.addAttribute("bicicletaCapturados", listaBicicleta);
+			return "mostrarBicicleta.jsp";
 		}
 
         }
