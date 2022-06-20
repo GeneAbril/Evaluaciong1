@@ -18,7 +18,7 @@ import com.generation.services.BicicletaService;
 
 @Controller
 @RequestMapping("/bicicleta")
-public class BicicletaController {
+public class BicicletaController{
 
     @Autowired
 	BicicletaService bicicletaService;
